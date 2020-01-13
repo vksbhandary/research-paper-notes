@@ -13,6 +13,6 @@ This is a list of recent papers which i've read already. Repository also contain
 | 7 | Unified Language Model Pre-training for Natural Language Understanding and Generation |   | [arxiv](https://arxiv.org/abs/1905.03197) |
 
 
+Next paper
 
-
-
+ - [ ] [SuperGLUE](https://papers.nips.cc/paper/8589-superglue-a-stickier-benchmark-for-general-purpose-language-understanding-systems)
