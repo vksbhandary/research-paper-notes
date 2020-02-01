@@ -11,8 +11,10 @@ This is a list of recent papers which i've read already. Repository also contain
 | 5 | RoBERTa: A Robustly Optimized BERT Pretraining Approach |   [Medium Blog](https://towardsdatascience.com/robustly-optimized-bert-pretraining-approaches-537dc66522dd) | [arxiv](https://arxiv.org/abs/1907.11692) |
 | 6 | Unsupervised Question Answering by Cloze Translation |   | [arxiv](https://arxiv.org/abs/1906.04980) |
 | 7 | Unified Language Model Pre-training for Natural Language Understanding and Generation |   | [arxiv](https://arxiv.org/abs/1905.03197) |
+| 8 | Attention is all you need | [Notes](Attention-Is-All-You-Need.md)  | [arxiv](https://arxiv.org/abs/1706.03762) |
 
 
 Next paper
-
+ - [ ] [Improving Language Understanding
+by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)
  - [ ] [SuperGLUE](https://papers.nips.cc/paper/8589-superglue-a-stickier-benchmark-for-general-purpose-language-understanding-systems)
