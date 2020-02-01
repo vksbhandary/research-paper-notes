@@ -4,7 +4,7 @@ This is a list of recent papers which i've read already. Repository also contain
 
 |  SNo. | Title |  Notes  |  Link  |
 |--|--|--|--|
-| 1  | XLNet: Generalized Autoregressive Pretraining for Language Understanding  |   | [arxiv](https://arxiv.org/abs/1906.08237) |
+| 1  | XLNet: Generalized Autoregressive Pretraining for Language Understanding  |   [Notes](notes/XLNet.md)  | [arxiv](https://arxiv.org/abs/1906.08237) |
 | 2 | Phrase-Based & Neural Unsupervised Machine Translation |   [Notes](notes/phrase-based-translation.md)   | [arxiv](https://arxiv.org/abs/1804.07755) |
 | 3 | Unsupervised Machine Translation Using Monolingual Corpora Only | [Notes](notes/monolingual-translation.md)  | [arxiv](https://arxiv.org/abs/1711.00043) |
 | 4 | Cross-lingual Language Model Pretraining |  [Notes](notes/XLM.md)  | [arxiv](https://arxiv.org/abs/1901.07291) |
