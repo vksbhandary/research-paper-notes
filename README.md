@@ -12,6 +12,7 @@ This is a list of recent papers which i've read already. Repository also contain
 | 6 | Unsupervised Question Answering by Cloze Translation |  [Notes](notes/cloze-translation.md) | [arxiv](https://arxiv.org/abs/1906.04980) |
 | 7 | Unified Language Model Pre-training for Natural Language Understanding and Generation | [Notes](notes/UNILM.md)  | [arxiv](https://arxiv.org/abs/1905.03197) |
 | 8 | Attention is all you need | [Notes](notes/Attention-Is-All-You-Need.md)  | [arxiv](https://arxiv.org/abs/1706.03762) |
+| 9 | Improving Language Understanding by Generative Pre-Training | [Notes](notes/gpt.md)  | [link](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
 
 
 Next paper
