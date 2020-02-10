@@ -16,6 +16,5 @@ This is a list of recent papers which i've read already. Repository also contain
 
 
 Next paper
- - [ ] [Improving Language Understanding
-by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)
- - [ ] [SuperGLUE](https://papers.nips.cc/paper/8589-superglue-a-stickier-benchmark-for-general-purpose-language-understanding-systems)
+ - [ ] [Towards a Human-like Open-Domain Chatbot](https://arxiv.org/abs/2001.09977)
+ - [ ] [ACUTE-EVAL: Improved Dialogue Evaluation with Optimized Questions and Multi-turn Comparisons](https://arxiv.org/abs/1909.03087)
