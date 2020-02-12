@@ -14,7 +14,7 @@ This is a list of recent papers which i've read already. Repository also contain
 | 8 | Attention is all you need | [Notes](notes/Attention-Is-All-You-Need.md)  | [arxiv](https://arxiv.org/abs/1706.03762) |
 | 9 | Improving Language Understanding by Generative Pre-Training | [Notes](notes/gpt.md)  | [link](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
 | 10 | Towards a Human-like Open-Domain Chatbot | [Notes](notes/meena.md)  | [link](https://arxiv.org/abs/2001.09977) |
-| 11 | The Evolved Transformer | [Notes](evolved-transformer.md)  | [link](https://arxiv.org/abs/1901.11117) |
+| 11 | The Evolved Transformer | [Notes](notes/evolved-transformer.md)  | [link](https://arxiv.org/abs/1901.11117) |
 
 Next paper
  - [x] [Towards a Human-like Open-Domain Chatbot](https://arxiv.org/abs/2001.09977)
