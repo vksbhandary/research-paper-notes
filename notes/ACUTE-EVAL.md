@@ -23,4 +23,4 @@ These tests are performed in following settings:
 1. Human-Model chats: In this setup, annotator is asked to evaluate two of previosuly obtained conversations, one between model A and human and other between model B and human.  And annotator is asked `Which speaker sounds more human?`.
 1. Self Chats: In this setup, conversations between two models, model A and model B are recorded, and annotator is asked same question `which speaker sounds more human?`.
 
-In both the settings annotator justifies their choice, which is also collected to decide which model wins.
+In both the settings annotator justifies their choice by giving a short explanation, which is also collected to decide which model wins.
