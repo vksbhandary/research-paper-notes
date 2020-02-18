@@ -1,6 +1,6 @@
 # Research papers
 
-This is a list of recent papers which i've read already. Repository also contain short notes on their key ideas.
+This is a list of papers which i've read. This repository also contain short notes on their key ideas.
 
 |  SNo. | Title |  Notes  |  Link  |
 |--|--|--|--|
@@ -16,8 +16,4 @@ This is a list of recent papers which i've read already. Repository also contain
 | 10 | Towards a Human-like Open-Domain Chatbot | [Notes](notes/meena.md)  | [link](https://arxiv.org/abs/2001.09977) |
 | 11 | The Evolved Transformer | [Notes](notes/evolved-transformer.md)  | [link](https://arxiv.org/abs/1901.11117) |
 | 12 | ACUTE-EVAL: Improved Dialogue Evaluation with Optimized Questions and Multi-turn Comparisons | [Notes](notes/ACUTE-EVAL.md)  | [link](https://arxiv.org/abs/1909.03087) |
-
-Next paper
- - [x] [Towards a Human-like Open-Domain Chatbot](https://arxiv.org/abs/2001.09977)
- - [x] [The Evolved Transformer](https://arxiv.org/abs/1901.11117)
- - [x] [ACUTE-EVAL: Improved Dialogue Evaluation with Optimized Questions and Multi-turn Comparisons](https://arxiv.org/abs/1909.03087)
+| 13 | Deep Equilibrium Models | [Notes](notes/DEQ.md)  | [link](https://arxiv.org/abs/1909.01377) |
