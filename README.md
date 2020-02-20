@@ -17,3 +17,4 @@ This is a list of papers which i've read. This repository also contain short not
 | 11 | The Evolved Transformer | [Notes](notes/evolved-transformer.md)  | [link](https://arxiv.org/abs/1901.11117) |
 | 12 | ACUTE-EVAL: Improved Dialogue Evaluation with Optimized Questions and Multi-turn Comparisons | [Notes](notes/ACUTE-EVAL.md)  | [link](https://arxiv.org/abs/1909.03087) |
 | 13 | Deep Equilibrium Models | [Notes](notes/DEQ.md)  | [link](https://arxiv.org/abs/1909.01377) |
+| 14 | Deep contextualized word representations | [Notes](notes/ELMO.md)  | [link](https://arxiv.org/abs/1802.05365) |
