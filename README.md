@@ -19,3 +19,4 @@ This is a list of papers which i've read. This repository also contain short not
 | 13 | Deep Equilibrium Models | [Notes](notes/DEQ.md)  | [link](https://arxiv.org/abs/1909.01377) |
 | 14 | Deep contextualized word representations | [Notes](notes/ELMO.md)  | [link](https://arxiv.org/abs/1802.05365) |
 | 15 | Regularizing and Optimizing LSTM Language Models | [Notes](notes/AWD-LSTM.md)  | [link](https://arxiv.org/abs/1708.02182) |
+| 16 | Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context | [Notes](notes/Transformer-XL.md)  | [link](https://arxiv.org/abs/1901.02860) |
