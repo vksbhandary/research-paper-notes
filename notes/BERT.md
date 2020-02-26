@@ -9,7 +9,9 @@ ELMO and GPT both uses unidirectional language model to learn language represent
 
 
 ## Language pretraining
+
 __Masked Language Model__: is used for For pretraining BERT as a pretraining objective. It is inspired by cloze task. While pre-training, random tokens from inputs are masked and the objective is to predict original tokens based on context. Contextual representation in BERT fuse both left and right context, which help in predicting the token.
+
 __Next Sentence Prediction (NSP)__:
 In addition to MLM, next sentence prediction task is jointy pre-trained using text pairs, for downstream tasks that uses text pairs as input. 
 
