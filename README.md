@@ -20,3 +20,4 @@ This is a list of papers which i've read. This repository also contain short not
 | 14 | Deep contextualized word representations | [Notes](notes/ELMO.md)  | [link](https://arxiv.org/abs/1802.05365) |
 | 15 | Regularizing and Optimizing LSTM Language Models | [Notes](notes/AWD-LSTM.md)  | [link](https://arxiv.org/abs/1708.02182) |
 | 16 | Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context | [Notes](notes/Transformer-XL.md)  | [link](https://arxiv.org/abs/1901.02860) |
+| 17 | BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding | [Notes](notes/BERT.md)  | [link](https://arxiv.org/abs/1810.04805) |
