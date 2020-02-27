@@ -10,11 +10,51 @@ ELMO and GPT both uses unidirectional language model to learn language represent
 
 ## Language pretraining
 
-__Masked Language Model__: is used for For pretraining BERT as a pretraining objective. It is inspired by cloze task. While pre-training, random tokens from inputs are masked and the objective is to predict original tokens based on context. Contextual representation in BERT fuse both left and right context, which help in predicting the token.
+__Masked Language Model__: is used for For pretraining BERT as a pretraining objective. It is inspired by cloze task. Bi-directional conditioning allows the input to indirectly see itself and model could predict target word in a multi-layered context. Therefore inorder to prevent this, some random tokens from input sequence are masked while pre-training and the objective is to predict original tokens based on context. Contextual representation in BERT fuse both left and right context, which help in predicting the masked token.
+
+1. The final hidden vectors corresponding to the mask tokens are fed into an output softmax over the vocabulary (as in a standard LM).
+1. This task create mismatch between pre-training and finetuning as __[MASK]__ token doesnt appear in downward task's input (its downside of this approach)
+1. To mitigate above downside, for each 15% of selected tokens:
+	- 80% of the times selected token is replaced with __[MASK]__ 
+	- 10% of times selected token is replaced with random token
+	- 10% of times selected token is left unchanged
+
 
 __Next Sentence Prediction (NSP)__:
-In addition to MLM, next sentence prediction task is jointy pre-trained using text pairs, for downstream tasks that uses text pairs as input. 
+In addition to MLM, next sentence prediction task is used to pre-train the model using text pairs. As many downstream NLP tasks are based on relationships between two sentences. Monolingual corpus can be used to pre-train model for binarized *binarized next sentence prediction* task.
+1. 50% of times when choosing sentences A and B, B is actual next sentence that follows A (labeled as __InNext__).
+1. 50% of time A and B are random sentences from corpus(labeled as __NoNext__).
+
 
 ## Model Architecture
 
 BERT is a multi-layer bi-directional Transformer encoder based on vanilla Transformer. The paper uses two model. BERT BASE has 12 transformer blocks, 768 Hidden size and 12 self-attention heads. BERT LARGE has 25 transformer blocks, 1024 Hidden size, 16 attention heads. BERT BASE has same size as OpenAI GPT  model.
+
+
+## Input/Output Representations
+
+In order to make BERT able to handle tasks which require pair of sentences and a single sentence, it is trained in both settings.
+
+1. To represent two pair of sentences in a single sequence token __[SEP]__ is used to seprate them.
+1. For a given token its input representations is constructed by adding corresponding token, segment, position embedding
+1. First token of every sequence repreents special class token __[CLS]__.
+1.  Final hidden state of __[CLS]__ token is used as aggregate sequence representation for classification.
+1. Paper uses Wordpiece embedding with only 30k token vocabulary.
+
+## Pretraining data
+For BERT pre-training BooksCorpus (800M words) and English Wikipedia (2500M words) are used. For wikipedia only text passages are used tables, list headers are ignored.
+
+## Fine-Tuning BERT
+Compared to Pre-training, Fine-tuning is inexpensive as all the state-of-the-art results can be achieved with a few Hours of GPU training or 1 Hour of single TPU training.
+For different downstream task model is trained differently with available pairs of inputs and output.
+
+## Effect of Pre-training Tasks
+
+Terms
+- No NSP: A bidirectional model is trained onlu using MLM objective.
+-  LTR & No NSP: A left context only model is trained using standard Left-to-right (LTR) language model. 
+
+1. Removing NSP hurts perfromance of QNLI, MNLI, SQuAD 1.1
+1. LTR & No NSP performs worse as compared to No NSP on all tasks.
+1. Adding BiLSTM on top of LTR significantly improved results on SQUAD, but worse than original BERT model
+1. BiLSTM's performance is worse on GLUE tasks.
