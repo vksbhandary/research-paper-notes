@@ -10,7 +10,7 @@ ELMO and GPT both uses unidirectional language model to learn language represent
 
 ## Language pretraining
 
-__Masked Language Model__: is used for For pretraining BERT as a pretraining objective. It is inspired by cloze task. Bi-directional conditioning allows the input to indirectly see itself and model could predict target word in a multi-layered context. Therefore inorder to prevent this, some random tokens from input sequence are masked while pre-training and the objective is to predict original tokens based on context. Contextual representation in BERT fuse both left and right context, which help in predicting the masked token.
+__Masked Language Model__: is used for For pretraining BERT as a pretraining objective. It is inspired by cloze task. Bi-directional conditioning allows the input to indirectly see itself and model could predict target word in a multi-layered context. Inorder to prevent this, some random tokens from input sequence are masked while pre-training and the objective is to predict original tokens based on context. Contextual representation in BERT fuse both left and right context, which help in predicting the masked token.
 
 1. The final hidden vectors corresponding to the mask tokens are fed into an output softmax over the vocabulary (as in a standard LM).
 1. This task create mismatch between pre-training and finetuning as __[MASK]__ token doesnt appear in downward task's input (its downside of this approach)
@@ -50,9 +50,10 @@ For different downstream task model is trained differently with available pairs 
 
 ## Effect of Pre-training Tasks
 
-Terms
-- No NSP: A bidirectional model is trained onlu using MLM objective.
--  LTR & No NSP: A left context only model is trained using standard Left-to-right (LTR) language model. 
+Terms used below
+- __No NSP__: A bidirectional model is trained onlu using MLM objective.
+- __LTR & No NSP__: A left context only model is trained using standard Left-to-right (LTR) language model. 
+- __BiLSTM__: A type of recurrent network with two LSTM layers.
 
 1. Removing NSP hurts perfromance of QNLI, MNLI, SQuAD 1.1
 1. LTR & No NSP performs worse as compared to No NSP on all tasks.
